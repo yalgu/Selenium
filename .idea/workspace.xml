@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Selenium.iml" afterPath="$PROJECT_DIR$/Selenium.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium-java-mazur.iws" />
@@ -11,7 +10,7 @@
     <file path="/pom.xml" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426615453650" ignored="false" />
     <file path="/FirstTest.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426866919287" ignored="false" />
     <file path="/fragment.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426870769294" ignored="false" />
-    <file path="/Dummy.txt" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1427217596848" ignored="false" />
+    <file path="/Dummy.txt" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1427217602378" ignored="false" />
     <file path="/SecondTest.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426866764483" ignored="false" />
     <file path="/testng.xml" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426871944626" ignored="false" />
     <file path="/AbstractTest.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426871881798" ignored="false" />
@@ -1001,7 +1000,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.75174826" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8146853" sideWeight="0.6986196" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53846157" sideWeight="0.16947852" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53846157" sideWeight="0.49463192" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52097905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1010,7 +1009,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21165644" sideWeight="0.46153846" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24003068" sideWeight="0.46153846" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53846157" sideWeight="0.83052146" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53846157" sideWeight="0.5053681" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
