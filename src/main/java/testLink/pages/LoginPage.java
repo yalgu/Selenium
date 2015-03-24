@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
  * Time: 18:41
  * To change this template use File | Settings | File Templates.
  */
-public class LoginPage {
+public class LoginPage extends AbstractPage{
     protected WebDriver driver;
      static  private final String URL = "http://demo.testlink.org/latest/login.php";
 
@@ -19,7 +19,7 @@ public class LoginPage {
     private static By loginButton = By.name("login_submit");
 
     public LoginPage(WebDriver driver){
-        this.driver = driver;
+        super(driver);
     }
     public void open(){
       driver.get(URL);

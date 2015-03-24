@@ -2,6 +2,8 @@ package testLink.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import testLink.models.TestSuite;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,23 +12,32 @@ import org.openqa.selenium.WebDriver;
  * Time: 18:42
  * To change this template use File | Settings | File Templates.
  */
-public class SpecificationPage {
+public class SpecificationPage extends AbstractPage{
     protected WebDriver driver;
 
     private static  By testSuiteField = By.name("name");
+    By speci = By.xpath("//div[contains(@class, 'menu_bar')]/a");
+    By actions = By.xpath("//img[@title='Actions']/a");
+    By createSuiteBtn = By.id("new_testSuite");
+    By detailsFrame = By.xpath("//iframe[@title='Rich text editor, details']");
+    By frameBody = By.tagName("body");
+    By saveButton = By.name("add_testsuite_button");
 
     public SpecificationPage(WebDriver driver){
-        this.driver = driver;
+        super(driver);
     }
 
     public void open(){
-        driver.findElement(By.xpath("//div[contains(@class, 'menu_bar')]/a")).click();
-   //     driver.findElement(By.xpath("//div[@class='menu_bar'/a")).click();
-
+        switchToTitleBar();
+        driver.findElement(speci).click();
     }
-    public void fillDataForTestSuite(){
-        String testSuiteName = "123";
-        driver.findElement(testSuiteField).sendKeys(testSuiteName);
 
+    public void createSuite(TestSuite suite){
+        driver.findElement(actions);
+        driver.findElement(createSuiteBtn);
+        driver.findElement(testSuiteField).sendKeys(suite.name);
+        driver.switchTo().frame(driver.findElement(detailsFrame));
+        driver.findElement(frameBody).sendKeys(suite.details);
+        driver.findElement(saveButton).click();
     }
 }

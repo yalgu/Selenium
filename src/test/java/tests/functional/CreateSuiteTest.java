@@ -11,6 +11,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import steps.TestSteps;
+import testLink.models.TestSuite;
 
 import static sun.security.jgss.GSSUtil.login;
 
@@ -36,18 +37,9 @@ public class CreateSuiteTest extends TestSteps{
 
     @Test
     public void createSuite() throws InterruptedException {
-         final By workFrame = By.name("workframe");
-        final By mainFrame = By.name("mainframe");
-       Assert.assertTrue(login("admin", "admin"), "Login failed");
-       // selectTestProject();
-       openTestSpec();
-        driver.switchTo().defaultContent();
-        driver.switchTo().frame(driver.findElement(mainFrame));
-        //driver.switchTo().frame(driver.findElement(workFrame));
-//        driver.findElement(By.xpath("div[contains(@class, 'workBack')]/img[contains(@class, 'clickable')]")).click();
-//
-//        driver.findElement(By.xpath("div[contains(@type, 'submit')]")).click();
-
+       TestSuite suite = new TestSuite();
+       //Assert.assertTrue(login("admin", "admin"), "Login failed");
+       createTestSuite(suite);
 
     }
 }

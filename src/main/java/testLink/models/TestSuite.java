@@ -8,4 +8,6 @@ package testLink.models;
  * To change this template use File | Settings | File Templates.
  */
 public class TestSuite {
+    public String name = "New test suite";
+    public String details = "details";
 }

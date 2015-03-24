@@ -2,6 +2,7 @@ package steps;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import testLink.models.TestSuite;
 import testLink.pages.LoginPage;
 import testLink.pages.SpecificationPage;
 
@@ -22,9 +23,7 @@ public class TestSteps {
     }
 
     public void openTestSpec(){
-        SpecificationPage testSpecificationPage = new SpecificationPage(driver);
-        testSpecificationPage.open();
-        //return testSpecificationPage.open();
+
     }
 
     public void selectTestProject(){
@@ -33,6 +32,12 @@ public class TestSteps {
        // driver.findElement(By.xpath("//option[contains(@link, 'TL-MN:TL - test project Mazur Nadiia')]")).click();
         driver.findElement(By.xpath("//select[contains(@name, 'testproject')]/option[text()='TL-MN:TL - test project Mazur Nadiia']")).click();
         //text()='Automation (1)'
+    }
+
+    public void createTestSuite(TestSuite suite){
+        SpecificationPage testSpecificationPage = new SpecificationPage(driver);
+        testSpecificationPage.open();
+        testSpecificationPage.createSuite(suite);
 
     }
 }
