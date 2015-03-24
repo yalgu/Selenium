@@ -19,7 +19,7 @@ import java.util.List;
  * Time: 18:27
  * To change this template use File | Settings | File Templates.
  */
-public class FirstTest {
+public class FirstTest{
     @DataProvider
     public Object[][] keywords() {
         return new Object[][] {
@@ -43,7 +43,7 @@ public class FirstTest {
         List <WebElement> searchedUrl;
         for (int i = 0; i < 3 && !containsUrl; i++) {
             if (i != 0){
-                 driver.findElement(By.xpath("//*[@id='pnnext']")).click();
+                driver.findElement(By.xpath("//*[@id='pnnext']")).click();
 
             }
             Thread.sleep(1000);

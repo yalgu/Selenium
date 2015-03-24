@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="firstTestSuite" verbose="1" parallel="tests" thread-count="1" >
+    <parameter name="expectedCount" value="2"/>
+    <!--<test name="GridTest">-->
+        <!--<classes>-->
+            <!--<class name="functional.FirstTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="ParallelTest">-->
+        <!--<classes>-->
+            <!--<class name="functional.SecondTest" />-->
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="TestLink">
+        <classes>
+            <class name="tests.functional.CreateSuiteTest" />
+        </classes>
+    </test>
+
+</suite>
