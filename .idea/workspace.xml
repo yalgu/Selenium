@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/functional/AbstractTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/tests/functional/CreateSuiteTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/functional/ExceptionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/testLink/pages/HomePage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/testLink/pages/LoginPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/testLink/pages/SpecificationPage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/testLink/models/TestCase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/testLink/models/TestStep.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/steps/TestSteps.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/testLink/models/TestSuite.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/functional/FirstTest.java" afterPath="$PROJECT_DIR$/src/test/java/functional/FirstTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/functional/SecondTest.java" afterPath="$PROJECT_DIR$/src/test/java/functional/SecondTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Selenium.iml" afterPath="$PROJECT_DIR$/Selenium.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="selenium-java-mazur.iws" />
@@ -25,7 +11,7 @@
     <file path="/pom.xml" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426615453650" ignored="false" />
     <file path="/FirstTest.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426866919287" ignored="false" />
     <file path="/fragment.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426870769294" ignored="false" />
-    <file path="/Dummy.txt" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1427210466575" ignored="false" />
+    <file path="/Dummy.txt" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1427217596848" ignored="false" />
     <file path="/SecondTest.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426866764483" ignored="false" />
     <file path="/testng.xml" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426871944626" ignored="false" />
     <file path="/AbstractTest.java" changelist="2abb6bbf-ee53-464f-b1f8-8a2c1ae6362a" time="1426871881798" ignored="false" />
@@ -218,7 +204,7 @@
       <file leaf-file-name="CreateSuiteTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/tests/functional/CreateSuiteTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.6423841">
+            <state line="46" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="1.4264706">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1015,16 +1001,16 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.75174826" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.8146853" sideWeight="0.6986196" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3618881" sideWeight="0.16947852" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53846157" sideWeight="0.16947852" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52097905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.068251535" sideWeight="0.89685315" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21165644" sideWeight="0.46153846" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24003068" sideWeight="0.89685315" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10314685" sideWeight="0.83052146" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24003068" sideWeight="0.46153846" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.53846157" sideWeight="0.83052146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1075,7 +1061,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1089,6 +1075,7 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1199,7 +1186,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/tests/functional/CreateSuiteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="0.6423841">
+        <state line="46" column="0" selection-start="1392" selection-end="1392" vertical-scroll-proportion="1.4264706">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
