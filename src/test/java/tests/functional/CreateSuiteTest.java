@@ -1,19 +1,15 @@
 package tests.functional;
 
-import com.thoughtworks.selenium.Wait;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 import steps.TestSteps;
+import org.testng.annotations.DataProvider;
+import testLink.models.TestCase;
 import testLink.models.TestSuite;
 
-import static sun.security.jgss.GSSUtil.login;
 
 /**
  * Created with IntelliJ IDEA.
@@ -23,9 +19,19 @@ import static sun.security.jgss.GSSUtil.login;
  * To change this template use File | Settings | File Templates.
  */
 public class CreateSuiteTest extends TestSteps{
+
+    @DataProvider
+    public Object[][] firstDataProvider() throws InterruptedException {
+        return new Object[][] {
+                new Object[] {"suite", "testCase" , "steps"},
+                new Object[] {createTestSuite(), createTestCase(this.suiteName) , createTestSteps(this.suiteName, this.caseName)}
+        };
+    }
+
      @BeforeSuite
      public void initEnv(){
          driver = new FirefoxDriver();
+         login("admin","admin");
      }
 
     @AfterSuite
@@ -35,11 +41,11 @@ public class CreateSuiteTest extends TestSteps{
        }
     }
 
-    @Test
-    public void createSuite() throws InterruptedException {
-       TestSuite suite = new TestSuite();
-       //Assert.assertTrue(login("admin", "admin"), "Login failed");
-       createTestSuite(suite);
+    @Test  (dataProvider = "firstDataProvider")
+    public void createSuite(TestSuite suite, TestCase testCase, Boolean steps) throws InterruptedException {
+        Assert.assertTrue(suite.name != null, "Suite creation failed");
+        Assert.assertTrue(testCase.name!= null, "Test case creation failed");
+        Assert.assertTrue(steps, "Test steps creation failed");
 
     }
 }

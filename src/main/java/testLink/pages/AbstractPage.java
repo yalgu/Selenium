@@ -16,10 +16,12 @@ public class AbstractPage {
     protected WebDriver driver;
     protected static final By version = By.xpath("//div[@class='menu_title']/span[contains(text(),'TestLink')]");
     protected static final By headenFrame = By.name("titlebar");
-    private final By workFrame = By.name("workframe");
-    private final By mainFrame = By.name("mainframe");
-    private final By treeFrame = By.name("treeframe");
-    private final By titleBar = By.name("titleBar");
+    private static final By headeFrame = By.name("titlebar");
+    private static final By mainFrame = By.name("mainframe");
+    private static final By treeFrame = By.name("treeframe");
+    private static final By workFrame = By.name("workframe");
+    private static final By formStepsControl = By.id("stepsControls");
+    // stepsControls
 
     public AbstractPage(WebDriver driver){
         this.driver = driver;
@@ -34,14 +36,27 @@ public class AbstractPage {
 
     protected void switchToTitleBar(){
         driver.switchTo().defaultContent();
-        driver.switchTo().frame(driver.findElement(titleBar));
+        driver.switchTo().frame(driver.findElement(headeFrame));
     }
-    protected void switchToMainframe(){
+
+    protected void switchToTreeFrame(){
         driver.switchTo().defaultContent();
         driver.switchTo().frame(driver.findElement(mainFrame));
+        driver.switchTo().frame(driver.findElement(treeFrame));
     }
-    protected void switchToWorkFrame(){
+
+    protected void switchToWorkFrame() throws InterruptedException {
+        Thread.sleep(1000);
         driver.switchTo().defaultContent();
+        driver.switchTo().frame(driver.findElement(mainFrame));
         driver.switchTo().frame(driver.findElement(workFrame));
+    }
+
+    protected void switchToForm() throws InterruptedException {
+        Thread.sleep(1000);
+        driver.switchTo().defaultContent();
+        driver.switchTo().frame(driver.findElement(mainFrame));
+        driver.switchTo().frame(driver.findElement(workFrame));
+        driver.switchTo().frame(driver.findElement(formStepsControl));
     }
 }

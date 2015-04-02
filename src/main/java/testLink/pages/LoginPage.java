@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
  * To change this template use File | Settings | File Templates.
  */
 public class LoginPage extends AbstractPage{
-    protected WebDriver driver;
+
      static  private final String URL = "http://demo.testlink.org/latest/login.php";
 
     private static  By loginField = By.id("login");

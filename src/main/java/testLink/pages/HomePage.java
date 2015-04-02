@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  * To change this template use File | Settings | File Templates.
  */
 public class HomePage extends AbstractPage{
-    protected WebDriver driver;
+
 
 
     public HomePage(WebDriver driver){

@@ -2,6 +2,8 @@ package steps;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import testLink.models.TestCase;
+import testLink.models.TestStep;
 import testLink.models.TestSuite;
 import testLink.pages.LoginPage;
 import testLink.pages.SpecificationPage;
@@ -16,28 +18,39 @@ import testLink.pages.SpecificationPage;
 public class TestSteps {
 
     protected WebDriver driver;
+    protected String suiteName;
+    protected String caseName;
+
     public boolean login(String login, String password){
         LoginPage loginpage = new LoginPage(driver);
         loginpage.open();
         return loginpage.login(login, password).isOpened();
     }
 
-    public void openTestSpec(){
-
+    public TestSuite createTestSuite() throws InterruptedException {
+        SpecificationPage specificationPage = new SpecificationPage(driver);
+        specificationPage.open();
+        TestSuite suite = new TestSuite();
+        specificationPage.createSuite(suite);
+        this.suiteName=suite.name;
+        return suite;
     }
 
-    public void selectTestProject(){
-//        driver.findElement(By.className("testproject")).click();
-        driver.findElement(By.xpath("//select[contains(@name, 'testproject')]")).click();
-       // driver.findElement(By.xpath("//option[contains(@link, 'TL-MN:TL - test project Mazur Nadiia')]")).click();
-        driver.findElement(By.xpath("//select[contains(@name, 'testproject')]/option[text()='TL-MN:TL - test project Mazur Nadiia']")).click();
-        //text()='Automation (1)'
+    public TestCase createTestCase(String suiteName) throws InterruptedException {
+        SpecificationPage specificationPage = new SpecificationPage(driver);
+        TestCase testCase = new TestCase();
+        specificationPage.createTestCase(suiteName, testCase);
+        this.caseName=testCase.name;
+        return testCase;
     }
 
-    public void createTestSuite(TestSuite suite){
-        SpecificationPage testSpecificationPage = new SpecificationPage(driver);
-        testSpecificationPage.open();
-        testSpecificationPage.createSuite(suite);
-
+    public Boolean createTestSteps(String suiteName, String testCaseName) throws InterruptedException {
+        SpecificationPage specificationPage = new SpecificationPage(driver);
+        TestStep testStep = new TestStep();
+        for (int i = 0; i<3; i++){
+            specificationPage.createTestStep(suiteName, testCaseName, testStep, i);
+            System.out.println("IIIIIIIIIIIIIIIIIIIIIIIIII "+i);
+        }
+        return true;
     }
 }
